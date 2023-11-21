@@ -1,0 +1,15 @@
+.Logosec {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.Logosec img {
+    user-select: none;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Remove any default inline styling on images */
+}

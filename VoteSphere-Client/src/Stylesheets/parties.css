@@ -10,11 +10,11 @@
     height: 100px;
     width: 100px;
     object-fit: contain;
-    margin: auto; /* Center the image horizontally */
-    display: block; /* Remove any default inline styling on images */
-    border-radius: 100%; /* Ensure the image is a circle */
-    border: 3px solid #000000; /* Add a white border to the circle */
-    transition: border 0.3s ease; /* Add a smooth transition effect on hover */
+    margin: auto; 
+    display: block; 
+    border-radius: 100%; 
+    border: 3px solid #000000; 
+    transition: border 0.3s ease; 
 
 }
 

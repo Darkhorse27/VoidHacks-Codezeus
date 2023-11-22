@@ -17,7 +17,7 @@ const Navbar = () => {
                         <li><Link to="/contact">Contact</Link></li>
                         {/* Dropdown Menu */}
                         <li className="yourUniqueDropdownClassName">
-                            <a href="/" className="yourUniqueDropbtnClassName">Login / Registration</a>
+                            <Link to="/" className="yourUniqueDropbtnClassName">Login / Registration</Link>
                             <div className="yourUniqueDropdownContentClassName">
                                 <Link to="/login">Login as User</Link>
                                 <Link to="/user-registration">Registered as User</Link>

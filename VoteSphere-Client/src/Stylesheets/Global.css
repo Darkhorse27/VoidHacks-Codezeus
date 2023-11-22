@@ -31,4 +31,7 @@ body {
     margin: 0 auto;
 }
 
+::placeholder{
+  color: black;
+}
 

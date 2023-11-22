@@ -3,12 +3,12 @@ import React from 'react'
 const UserReg = () => {
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#fff' }} className="main-block">
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'transparent' }} className="main-block">
                 <form action="/" style={{ width: '100%', padding: '20px' }}>
-                    <h1 style={{ margin: '0', fontWeight: '400' }}>Regitration Form</h1>
-                    <fieldset style={{ border: 'none', borderTop: '1px solid #8ebf42' }}>
+                    <h1 style={{ margin: '0', fontWeight: '400' , fontWeight:'bold'}}>Regitration Form</h1>
+                    <fieldset style={{ border: 'none', borderTop: '1px solid black' }}>
                         <legend>
-                            <h3 style={{ margin: '12px 0', color: '#8ebf42' }}>Account Details</h3>
+                            <h3 style={{ margin: '12px 0', color: 'black' }}>Account Details</h3>
                         </legend>
                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }} className="account-details">
                             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', width: '100%' }}>
@@ -29,9 +29,9 @@ const UserReg = () => {
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset style={{ border: 'none', borderTop: '1px solid #8ebf42' }}>
+                    <fieldset style={{ border: 'none', borderTop: '1px solid black' }}>
                         <legend>
-                            <h3 style={{ margin: '12px 0', color: '#8ebf42' }}>Personal Details</h3>
+                            <h3 style={{ margin: '12px 0', color: 'black' }}>Personal Details</h3>
                         </legend>
                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }} className="personal-details">
                             <div style={{ width: '100%' }}>
@@ -43,7 +43,7 @@ const UserReg = () => {
                                     <label style={{ padding: '0 5px', textAlign: 'right', verticalAlign: 'middle', width: '40%' }}>Phone*</label>
                                     <input type="text" name="name" required style={{ padding: '5px', verticalAlign: 'middle', width: '60%' }} />
                                 </div>
-                                <div style={{ width: '100%' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', width: '100%' }}>
                                     <label style={{ padding: '0 5px', textAlign: 'right', verticalAlign: 'middle', width: '40%' }}>State*</label>
                                     <select style={{ width: '60%' }}>
                                         <option value="">Select your state</option>
@@ -83,33 +83,34 @@ const UserReg = () => {
                                 </div>
                             </div>
                             <div style={{ width: '100%' }}>
-                                <div style={{ width: '100%' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', width: '100%' }}>
                                     <label style={{ padding: '0 5px', textAlign: 'right', verticalAlign: 'middle', width: '40%' }}>Gender*</label>
-                                    <div style={{ display: 'flex', alignItems: 'center' }} className="gender">
-                                        <input type="radio" value="none" id="male" name="gender" required />
-                                        <label htmlFor="male" className="radio">Male</label>
-                                        <input type="radio" value="none" id="female" name="gender" required />
-                                        <label htmlFor="female" className="radio">Female</label>
+                                    <div style={{ display: 'flex', alignItems: 'center',justifyContent:'space-evenly' }} className="gender">
+                                        <input type="radio" value="none" id="male" name="gender" required style={{marginRight:'5px'}}/>
+                                        <label htmlFor="male" className="radio" style={{marginRight:'10px'}}>Male</label>
+                                        <input type="radio" value="none" id="female" name="gender" required  style={{marginRight:'5px'}}/>
+                                        <label htmlFor="female" className="radio" >Female</label>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', width: '100%' }} className="birthdate">
-                                    <label style={{ padding: '0 5px', textAlign: 'right', verticalAlign: 'middle', width: '40%' }}>Birthdate*</label>
+                                    <label style={{ padding: '0 5px', textAlign: 'right', verticalAlign: 'middle', width: '40%' }}>Year of Birth*</label>
                                     <div style={{ display: 'flex', justifyContent: 'space-between', width: '60%' }} className="bdate-block">
                                         <input type="text" name="name" required />
                                     </div>
                                 </div>
-                                <div className="mb-3">
-                                    <label htmlFor="formFileSm" className="form-label">Upload Aadhar Card</label>
+                                <div className="mb-3" style={{marginLeft:'26em'}}>
+                                    <label htmlFor="formFileSm" className="form-label" style={{marginRight:'10px'}}>Upload Aadhar Card</label>
                                     <input className="form-control form-control-sm" id="formFileSm" type="file" />
                                 </div>
-                                <div className="mb-3">
-                                    <label htmlFor="formFileSm" className="form-label">Upload Voter Id Card</label>
+                                <div className="mb-3" style={{marginLeft:'26em'}}>
+                                    <label htmlFor="formFileSm" className="form-label" style={{marginRight:'10px'}}>Upload Voter Id Card</label>
                                     <input className="form-control form-control-sm" id="formFileSm" type="file" />
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-                    <button type="submit" to="/" style={{ width: '100%', padding: '10px 0', margin: '10px auto', borderRadius: '5px', border: 'none', background: '#8ebf42', fontSize: '14px', fontWeight: '600', color: '#fff' }}>Submit</button>
+                    <br />  
+                    <button type="submit" to="/" style={{ width: '50%', padding: '10px 0', marginLeft:'25em', borderRadius: '5px', border: '1px solid black', backgroundColor: '#00000024', fontSize: '14px', fontWeight: '600', color: 'black',cursor:'pointer' }}>Submit</button>
                 </form>
             </div>
         </>

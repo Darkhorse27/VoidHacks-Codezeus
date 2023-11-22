@@ -1,7 +1,11 @@
 import React from 'react'
 import "../Stylesheets/Footer.css"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+      };
     return (
         <div>
             <footer>
@@ -14,7 +18,7 @@ const Footer = () => {
                     </div>
                     <div class="content_2">
                         <h4>EXPLORE</h4>
-                        <a href="#">Candidates</a>
+                        <Link to="/help" onClick={handleClick}>Help</Link>
                         <a href="#">Election Updates</a>
                         <a href="#">Voting Process</a>
                     </div>

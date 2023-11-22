@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom'
 import Loader from './components/Loader'; // Import your Loader component
 import Home from './Home';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +25,9 @@ function App() {
         <Loader />
       ) : (
         <>
-          <Home/>
+        <Navbar/>
+          {<Outlet/>}
+          <Footer/>
         </>
       )}
     </div>

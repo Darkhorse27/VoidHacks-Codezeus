@@ -1,60 +1,59 @@
-/* NAVBAR  */
-
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
+.yourUniqueNavbarClassName input[type="checkbox"],
+.yourUniqueNavbarClassName .yourUniqueHamburgerLinesClassName {
     display: none;
 }
 
-.navbar {
+.yourUniqueNavbarClassName {
     box-shadow: 0 5px 4px rgba(146, 161, 176, 0.093);
     position: sticky;
     top: 0;
-    background:rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.07);
     color: rgb(0, 0, 0);
     z-index: 100;
 }
 
-.navbar-container {
+.yourUniqueNavbarContainerClassName {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
 }
 
-.logo{
+.yourUniqueLogoClassName {
     cursor: pointer;
     user-select: none;
     margin-left: 3rem;
 }
-.menu-items {
+
+.yourUniqueMenuItemsClassName {
     order: 2;
     display: flex;
     margin-right: 3rem;
 }
 
-.menu-items li {
+.yourUniqueMenuItemsClassName li {
     list-style: none;
     margin-left: 1.5rem;
     font-size: 1.2rem;
 }
 
-.menu-items li a{
-    transition: all 1s ease;
+.yourUniqueMenuItemsClassName li a {
+    transition: all 0.5s ease;
 }
-.menu-items li a:hover{
-    margin: 8px;
+
+.yourUniqueMenuItemsClassName li a:hover {
+    margin: 2px;
     font-weight: bolder;
 }
 
-
-.navbar-container ul a {
+.yourUniqueNavbarContainerClassName ul a {
     text-decoration: none;
     color: var(--black);
     font-size: 18px;
     position: relative;
 }
 
-.navbar-container ul a:after {
+.yourUniqueNavbarContainerClassName ul a:after {
     content: "";
     position: absolute;
     background: var(--primary-color);
@@ -65,37 +64,36 @@
     transition: 0.3s;
 }
 
-.navbar-container ul a:hover:after {
+.yourUniqueNavbarContainerClassName ul a:hover:after {
     width: 100%;
 }
 
-
 /* Dropdown Styles */
-.dropdown {
+.yourUniqueDropdownClassName {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.yourUniqueDropdownContentClassName {
     display: none;
     position: absolute;
-    background-color:transparent;
+    background-color: transparent;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown-content a {
+.yourUniqueDropdownContentClassName a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+.yourUniqueDropdownContentClassName a:hover {
+    background-color: #0000001f;
 }
 
-.dropdown:hover .dropdown-content {
+.yourUniqueDropdownClassName:hover .yourUniqueDropdownContentClassName {
     display: block;
 }

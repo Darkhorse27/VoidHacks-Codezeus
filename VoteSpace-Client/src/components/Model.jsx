@@ -6,20 +6,20 @@ const Model = () => {
     return (
         <div>
         <br /><br />
-            <section>
-                <div class="model container">
-                    <div class="best-seller">
-                        <div className="model">
-                            <img src={modelimg} alt="" />
-                        </div>
-                        <div>
-                            <h3>Empower <br /><span style={{WebkitTextStroke:"1.5px black",color:"transparent"}}> Democracy </span> <br /> VoteSphere – Your <span style={{WebkitTextStroke:"1.5px black",color:"transparent"}}> Voice</span> Matter</h3>
-                        </div>
+        <section>
+            <div className="YourUniqueModelContainerClassName container">
+                <div className="YourUniqueBestSellerClassName">
+                    <div className="YourUniqueModelClassName">
+                        <img src={modelimg} alt="" />
+                    </div>
+                    <div>
+                        <h3>Empower <br /><span className="YourUniqueTextStrokeClassName" style={{color:"transparent",webkitTextStroke:"1.2px black"}}> Democracy </span> <br /> VoteSphere – Your <span className="YourUniqueTextStrokeClassName" style={{color:"transparent",webkitTextStroke:"1.2px black"}}> Voice</span> Matter</h3>
                     </div>
                 </div>
-            </section>
-            <br /><br /><br /><br /><br />
-        </div>
+            </div>
+        </section>
+        <br /><br /><br /><br /><br />
+    </div>
     )
 }
 

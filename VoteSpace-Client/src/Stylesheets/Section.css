@@ -1,23 +1,23 @@
-/* section */
+/* YourUniqueSectionStyle.css */
 
-section{
+#yourUniqueSectionId {
     height: 60vh;
 }
 
-.home_txt {
+.yourUniqueHomeTxtClassName {
     position: absolute;
     margin-left: 2.5em;
     margin-top: 2.5em;
 }
 
-.home_txt p {
+.yourUniqueHomeTxtClassName p {
     color: rgb(0, 0, 0);
     font-weight: 600;
     padding-bottom: 20px;
     letter-spacing: 1.5px;
 }
 
-.home_txt h2 {
+.yourUniqueHomeTxtClassName h2 {
     font-size: 2.6rem;
     font-weight: 500;
     user-select: none;
@@ -27,7 +27,7 @@ section{
     color: rgb(0, 0, 0);
 }
 
-#fallwinter{
+#yourUniqueFallWinterId {
     display: inline-block;
     cursor: pointer;
     color: transparent;
@@ -35,29 +35,27 @@ section{
     transition: all 1.3s ease;
 }
 
-#fallwinter:hover{
+#yourUniqueFallWinterId:hover {
     transform: scale(1.5);
     margin-left: 13rem;
     margin-top: 1.8rem;
     margin-right: 5rem;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
-    -webkit-text-fill-color: rgba(84, 221, 84, 0.431)
+    -webkit-text-fill-color: rgba(255, 166, 0, 0.346);
 }
 
-
-.home_txt .home_label p {
+.yourUniqueHomeTxtClassName .yourUniqueHomeLabelClassName p {
     color: rgb(0, 0, 0);
     font-size: 14px;
     padding-top: 10px;
 }
 
-
-.home_txt a {
+.yourUniqueHomeTxtClassName a {
     text-decoration: none;
     color: var(--white);
 }
 
-.home_txt button {
+#yourUniqueBtnId {
     background-color: var(--black);
     color: var(--white);
     border: none;
@@ -71,19 +69,19 @@ section{
     cursor: pointer;
 }
 
-.home_txt .bx-right-arrow-alt {
+.yourUniqueHomeTxtClassName .bx-right-arrow-alt {
     font-size: 25px;
     padding-left: 5px;
 }
 
-.home_txt .home_social_icons a {
+.yourUniqueHomeTxtClassName .home_social_icons a {
     text-decoration: none;
     color: var(--light-black);
     margin-right: 15px;
     font-size: 18px;
 }
 
-#btn {
+#yourUniqueBtnId {
     margin-top: 25px;
     font-weight: bolder;
     position: relative;
@@ -106,6 +104,6 @@ section{
     }
 }
 
-#btn:hover {
-    background-color:rgba(255, 166, 0, 0.352);
+#yourUniqueBtnId:hover {
+    background-color: rgba(255, 166, 0, 0.352);
 }

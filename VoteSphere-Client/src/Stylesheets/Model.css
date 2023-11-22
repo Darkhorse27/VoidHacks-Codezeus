@@ -1,0 +1,49 @@
+.YourUniqueBestSellerClassName {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.YourUniqueModelClassName {
+    margin-left: 5em;
+}
+
+.YourUniqueModelClassName img {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 420px;
+}
+
+.YourUniqueModelContainerClassName h3 {
+    font-size: 4em;
+    user-select: none;
+    margin-left: 1rem;
+    animation: zigzag2 5s infinite; /* Increased duration for a smoother effect */
+    transition: all 2s ease-in-out; /* Apply transition to the initial state */
+}
+
+@keyframes zigzag2 {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+        transform: scale(1.2);
+    }
+    25% {
+        transform: translate3d(-15px, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 30px, 0);
+    }
+    75% {
+        transform: translate3d(15px, 0, 0);
+        transform: scale(0.7);
+    }
+}
+
+.YourUniqueModelContainerClassName h3 span:hover {
+    text-shadow: 2px 2px 5px rgba(255, 166, 0, 0.746);
+}
+
+::placeholder {
+    color: black;
+}

@@ -1,32 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../Stylesheets/Navbar.css";
 
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar">
-                <div className="navbar-container">
-                    <input type="checkbox" name="" id="checkbox"></input>
-                    <div className="hamburger-lines">
-                        <span className="line line1"></span>
-                        <span className="line line2"></span>
-                        <span className="line line3"></span>
-                    </div>
-                    <div className="logo" style={{ fontSize: "2rem" }}>
+            <nav className="yourUniqueNavbarClassName">
+                <div className="yourUniqueNavbarContainerClassName">
+                    <div className="yourUniqueLogoClassName" style={{ fontSize: "2rem" }}>
                         VoteSphere
                     </div>
-                    <ul className="menu-items">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sellers">Vote</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul className="yourUniqueMenuItemsClassName">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/voting">Vote</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                         {/* Dropdown Menu */}
-                        <li className="dropdown">
-                            <a href="#" className="dropbtn">Dropdown</a>
-                            <div className="dropdown-content">
-                                <a href="#">Item 1</a>
-                                <a href="#">Item 2</a>
-                                <a href="#">Item 3</a>
+                        <li className="yourUniqueDropdownClassName">
+                            <a href="/" className="yourUniqueDropbtnClassName">Login / Registration</a>
+                            <div className="yourUniqueDropdownContentClassName">
+                                <Link to="/login">Login as User</Link>
+                                <Link to="/user-registration">Registered as User</Link>
+                                <Link to="/admin">Login as Admin</Link>
                             </div>
                         </li>
                     </ul>

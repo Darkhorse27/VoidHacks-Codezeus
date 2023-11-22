@@ -1,0 +1,88 @@
+/* Footer  */
+
+.icon{
+    display: flex;
+}
+.icon a i{
+    color: black;
+    margin: 0px 10px;
+}
+
+.icon a i:hover{
+    color: rgba(255, 255, 255, 0.486);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.049);
+    width: 100%;
+}
+
+.footer-container .content_1 img {
+    height: 25px;
+    width: 180px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footer-container h4 {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.footer-container a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+.footer-container a:hover{
+    margin-left: 3px;
+}
+
+
+.footer-container .content_1 p,
+.footer-container .content_4 p {
+    color: black;
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+.footer-container .content_4 input[type="email"] {
+    border: none;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    padding: 15px 0;
+}
+
+.footer-container .content_4 .f-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .content_4 .bx {
+    color: black;
+}
+
+.f-design {
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.f-design .f-design-txt {
+    color: black;
+    padding: 25px 0;
+    font-size: 14px;
+    color: var(--grey);
+}
